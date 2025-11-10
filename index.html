@@ -48,7 +48,6 @@ function showProtectedContent(username) {
     $('#user-display').text(username);
     $('#protected-content').show();
 }
-
 function showLoginForm() {
     $('#protected-content').hide();
     $('#login-form').show();
@@ -115,7 +114,7 @@ $('#login-form').on('submit', function(e) {
 
     $.ajax({
         // 2. Specify the URL of the backend endpoint
-        url: '/api/login', 
+        url: 'httpbin.org/post', 
         
         // 3. Specify the HTTP method (POST for sending data)
         method: 'POST', 
@@ -130,7 +129,7 @@ $('#login-form').on('submit', function(e) {
         success: function(response) {
             // Backend successfully validated credentials and set cookies.
             // Redirect the user or update the UI.
-            window.location.href = '/dashboard';
+            window.location.href = '/';
         },
         
         // 7. Handle an error response (HTTP status 400+)
