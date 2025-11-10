@@ -5,12 +5,12 @@
   function al() {
       alert('You clicked the button.')
 }
-  $(document).ready(function(){
-    $("p").html("<h1><em>Hello, World!</em></h1>");
-    $("button").html("Click!");
-    $("div").html("<a><p>I am using jQuery to build this site.</p></a>");
-    $("a").html("<p>jQuery is great</p>");
-    $("button").css("background-color", "grey");
+  $(document).ready(function() {
+  $('h1').html("jQuery Site").slideUp(500);
+  $('h1').html("jQuery Site").slideDown(500)
+  $('button').html("Example").fadeOut(500);
+  $('button').html("Example").fadeIn(500);
+  $('button').css("background-color", "grey");
 })
      </script>
 	<p></p>
