@@ -1,17 +1,26 @@
+<!DOCTYPE html>
 <html>
   <body>
-     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-        integrity="sha256-3fab3Z0FvYbA4KpQ7n4kE2h7D6Z1q2i5A1rH5QW8E8Y="
-        crossorigin="anonymous"></script>
+     <script src="jquery.min.js"></script>
 	<script>
+              function click() {
+                  alert("Thanks!")
+               }
 		$(document).ready(function() {
-  $('h1').html("<em>Hello, World</em>").fadeOut(500)
-  $('h1').html("<em>Hello, World</em>").fadeIn(500)
+   $('h1').html("<em>Hello, World</em>").fadeOut(500)
+   $('h1').html("<em>Hello, World</em>").fadeIn(500)
     $('h1').html("<em>Hello, World</em>").slideUp(500)
-     $('h1').html("<em>Hello, World</em>").slideDown(500)
+     $('h1').html("<em>Hello, World</em>").slideDown(500);
+     $('button').html("Click me!").slideUp(500);
+     $('button').html("Click me!").slideDown(500);
 })
 	</script>
+         <script>
+  window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+</script>
+<script defer src="/_vercel/insights/script.js"></script>
           <h1></h1>
+          <button></button>
         </body>
 </html>
 
